@@ -1,0 +1,41 @@
+{
+  "sales_files": [
+      "sample_sales_2026_06.xlsx",
+      "sample_sales_2026_07.xlsx"
+  ],
+  "master_file": "product_master.xlsx",
+  "report_file": "sales_summary_report.xlsx",
+  "sales_key": "product_code",
+  "master_key": "product_code",
+  "sales_required_columns": [
+      "sales_id",
+      "sales_date",
+      "product_code",
+      "quantity",
+      "unit_price"
+  ],
+  "master_required_columns": [
+      "product_code",
+      "product_name",
+      "category"
+  ],
+  "master_value_columns": [
+      "product_name",
+      "category"
+  ],
+  "sales_numeric_columns": [
+      "quantity",
+      "unit_price"
+  ],
+  "sales_date_columns": [
+      "sales_date"
+  ],
+  "date_format": "%Y-%m-%d",
+  "month_format": "%Y-%m",
+  "amount_calculation": {
+      "enabled": true,
+      "quantity_column": "quantity",
+      "price_column": "unit_price",
+      "output_column": "sales_amount"
+  }
+}
